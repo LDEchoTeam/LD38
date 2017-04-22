@@ -26,3 +26,11 @@ void APestBase::Tick(float DeltaTime)
 
 }
 
+FVector APestBase::GetNavigationDirection()
+{
+	FVector DirectVector = NavigationTarget - GetActorLocation();
+	FVector Indication = DirectVector.GetUnsafeNormal();
+	FVector Direction = Indication - FVector::DotProduct(NavigationNormal, Indication);
+
+	return Direction;
+}

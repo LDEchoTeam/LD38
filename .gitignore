@@ -68,3 +68,6 @@
 *.blend1
 *.pdb
 *.db
+
+# Weird stuff
+failed.hotreload
