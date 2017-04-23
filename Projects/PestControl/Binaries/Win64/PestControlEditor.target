@@ -2,7 +2,7 @@
 	"TargetName" : "PestControlEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "ab6afd82-ee71-4908-8328-f06161ba9463",
+	"BuildId" : "ddebabc3-157c-46da-84ef-ac7fc360ec99",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -17,15 +17,15 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-PestControl-5358.dll",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-PestControl-2355.dll",
 			"Type" : "DynamicLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-PestControl-5358.pdb",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-PestControl-2355.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-PestControl-5358.lib",
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-PestControl-2355.lib",
 			"Type" : "ImportLibrary"
 		},
 		{
