@@ -34,3 +34,13 @@ FVector APestBase::GetNavigationDirection()
 
 	return Direction;
 }
+
+float APestBase::GetNavigationDistance()
+{
+	return FVector::Dist(NavigationTarget, GetActorLocation());
+}
+
+float APestBase::GetNavigationRange(float minimum, float maximum)
+{
+	return FMath::Clamp((GetNavigationDistance() - minimum) / (maximum - minimum), 0.0f, 1.0f);
+}

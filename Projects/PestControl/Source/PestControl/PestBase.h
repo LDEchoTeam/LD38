@@ -22,13 +22,19 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Pest")
+	UPROPERTY(BlueprintReadWrite, Category="Pest")
 	FVector NavigationTarget;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Pest")
+	UPROPERTY(BlueprintReadWrite, Category="Pest")
 	FVector NavigationNormal;
 
 	UFUNCTION(BlueprintPure, Category="Pest")
 	FVector GetNavigationDirection();
+
+	UFUNCTION(BlueprintPure, Category="Pest")
+	float GetNavigationDistance();
+
+	UFUNCTION(BlueprintPure, Category="Pest")
+	float GetNavigationRange(float minimum, float maximum);
 	
 };
