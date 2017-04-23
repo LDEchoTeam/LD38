@@ -22,6 +22,10 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	
-	
+	UPROPERTY(BlueprintReadWrite, Category="Lokator")
+	FVector NavigationTarget;
+
+private:
+	void Navigate(float DeltaTime);
+
 };

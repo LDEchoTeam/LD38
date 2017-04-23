@@ -24,5 +24,12 @@ void ALokatorBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	Navigate(DeltaTime);
+
+}
+
+void ALokatorBase::Navigate(float DeltaTime)
+{
+
 }
 
