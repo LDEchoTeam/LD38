@@ -25,7 +25,10 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category="Lokator")
 	FVector NavigationTarget;
 
-private:
-	void Navigate(float DeltaTime);
+	UFUNCTION(BlueprintPure, Category="Lokator")
+	FVector GetIntermediateNavigationNormal(float NavigationSpeed, float DeltaTime);
+
+	UFUNCTION(BlueprintPure, Category="Lokator")
+	FVector GetIntermediateNavigationTangent(FVector IntermediateNormal, float RotationSpeed, float DeltaTime);
 
 };

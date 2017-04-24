@@ -30,9 +30,9 @@ FVector APestBase::GetNavigationDirection()
 {
 	FVector DirectVector = NavigationTarget - GetActorLocation();
 	FVector Indication = DirectVector.GetUnsafeNormal();
-	FVector Direction = Indication - FVector::DotProduct(NavigationNormal, Indication);
+	FVector Direction = Indication - FVector::DotProduct(NavigationNormal, Indication) * NavigationNormal;
 
-	return Direction;
+	return Direction.GetUnsafeNormal();
 }
 
 float APestBase::GetNavigationDistance()
