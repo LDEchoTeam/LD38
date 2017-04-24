@@ -22,6 +22,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+
 	UPROPERTY(BlueprintReadWrite, Category="Pest")
 	FVector NavigationTarget;
 	
@@ -36,5 +37,9 @@ public:
 
 	UFUNCTION(BlueprintPure, Category="Pest")
 	float GetNavigationRange(float minimum, float maximum);
+
+
+	UFUNCTION(BlueprintPure, Category="Pest")
+	bool GetWeightedAverage(TArray<AActor*> actors, float minimum, float maximum, FVector& average);
 	
 };
