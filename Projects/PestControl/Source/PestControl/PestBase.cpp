@@ -26,6 +26,7 @@ void APestBase::Tick(float DeltaTime)
 
 }
 
+
 FVector APestBase::GetNavigationDirection()
 {
 	FVector DirectVector = NavigationTarget - GetActorLocation();
@@ -43,4 +44,31 @@ float APestBase::GetNavigationDistance()
 float APestBase::GetNavigationRange(float minimum, float maximum)
 {
 	return FMath::Clamp((GetNavigationDistance() - minimum) / (maximum - minimum), 0.0f, 1.0f);
+}
+
+
+bool APestBase::GetWeightedAverage(TArray<AActor*> actors, float minimum, float maximum, FVector& average)
+{
+	average.Set(0.0f, 0.0f, 0.0f);
+
+	float totalWeight = 0.0f;
+
+	for(AActor* actor : actors) {
+		float Distance = FVector::Dist(actor->GetActorLocation(), GetActorLocation());
+
+		float weight = 1.0f - FMath::Clamp((Distance - minimum) / (maximum - minimum), 0.0f, 1.0f);
+
+		average += actor->GetActorLocation() * weight;
+
+		totalWeight += weight;
+	}
+
+	if(totalWeight > 0.0f) {
+		average /= totalWeight;
+
+		return true;
+	}
+	else {
+		return false;
+	}
 }
