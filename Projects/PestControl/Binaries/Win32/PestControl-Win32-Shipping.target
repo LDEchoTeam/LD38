@@ -1,8 +1,8 @@
 {
 	"TargetName" : "PestControl",
-	"Platform" : "Win64",
+	"Platform" : "Win32",
 	"Configuration" : "Shipping",
-	"BuildId" : "00f5ed7d-b895-4f22-b670-e9e574345e3d",
+	"BuildId" : "9dff4e72-0a33-4953-8588-ffe3e4aa3815",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -17,11 +17,11 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/PestControl-Win64-Shipping.exe",
+			"Path" : "$(ProjectDir)/Binaries/Win32/PestControl-Win32-Shipping.exe",
 			"Type" : "Executable"
 		},
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/PestControl-Win64-Shipping.pdb",
+			"Path" : "$(ProjectDir)/Binaries/Win32/PestControl-Win32-Shipping.pdb",
 			"Type" : "SymbolFile"
 		}
 	],
@@ -69,10 +69,6 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Media/WmfMedia/WmfMedia.uplugin",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Plugins/Messaging/TcpMessaging/TcpMessaging.uplugin",
 			"Type" : "UFS"
 		},
 		{
@@ -156,103 +152,95 @@
 			"Type" : "UFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundation_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/PxFoundation_x86.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundation_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/PxFoundation_x86.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxPvdSDK_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/PxPvdSDK_x86.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxPvdSDK_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/PxPvdSDK_x86.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/PhysX3_x86.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/PhysX3_x86.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Cooking_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/PhysX3Cooking_x86.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Cooking_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/PhysX3Cooking_x86.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Common_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/PhysX3Common_x86.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Common_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/PhysX3Common_x86.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundation_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/APEX_Clothing_x86.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxPvdSDK_x64.dll",
-			"Type" : "NonUFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Clothing_x64.dll",
-			"Type" : "NonUFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Clothing_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/APEX_Clothing_x86.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Destructible_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/APEX_Destructible_x86.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Destructible_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/APEX_Destructible_x86.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Legacy_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/APEX_Legacy_x86.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Legacy_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/APEX_Legacy_x86.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/ApexFramework_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/ApexFramework_x86.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/ApexFramework_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win32/VS2015/ApexFramework_x86.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/Ogg/Win32/VS2015/libogg.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/Vorbis/Win32/VS2015/libvorbis.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/Vorbis/Win32/VS2015/libvorbisfile.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/Oculus/OculusMobile/SDK_1_0_3/Win64/VrApiShim.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/Oculus/OculusMobile/SDK_1_0_3/Win32/VrApiShim.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/OpenVR/OpenVRv1_0_2/Win64/openvr_api.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/OpenVR/OpenVRv1_0_2/Win32/openvr_api.dll",
 			"Type" : "NonUFS"
 		}
 	]
